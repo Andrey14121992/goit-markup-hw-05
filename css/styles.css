@@ -79,7 +79,7 @@ display: block;
 
 .current {
   position: relative;
-  
+  color:  #2196f3;;
 }
 
 .current::after {
@@ -227,6 +227,10 @@ margin-right: 50px;
 }
 
 .contacs-link {
+
+transition-property:color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -242,7 +246,7 @@ align-items: center;
   color: #2196F3;
 }
 
-
+ 
 
 
 /*--------Main---------*/
@@ -396,6 +400,9 @@ padding-bottom: 94px;
 
 
 .team-soc-link {
+  transition-property:color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -502,6 +509,10 @@ color: #757575;
 }
 
 .clients-link {
+
+  transition-property: color, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   align-content: center;
   justify-content: center;
@@ -554,6 +565,10 @@ display: flex;
 }
 
 .footer-adress {
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -573,6 +588,10 @@ justify-content: flex-end;
 
 
 .footer-contacts {
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
@@ -656,6 +675,9 @@ display: flex;
 
 
 .footer-soc-link {
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -691,6 +713,10 @@ justify-content: center;
 
 
 .button{
+
+transition-property:color, background-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 cursor: pointer;
 background:#F5F4FA;;
 border-radius: 4px;
@@ -759,6 +785,9 @@ margin:15px;
 }
 
 .porfolio-link{
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
 }
 
@@ -802,7 +831,8 @@ color: #757575;
 
 
 .backdrop {
- 
+  transition-property: opacity, visibility;
+  transition-duration: 450ms;
   position: fixed;
   top: 0;
   left: 0;
