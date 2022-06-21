@@ -61,7 +61,6 @@ margin-right: 93px;
 }
 
 .header-studio {
-
 transition-property:color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -96,7 +95,9 @@ display: block;
 }
 
 
-
+.header-portfolio-contacts.current {
+  color:#2196f3
+}
 
 
 .header {
@@ -210,9 +211,16 @@ color: #2196F3;
   color: #212121;
   text-decoration: none;
   padding-top: 32px;
-padding-bottom: 32px;
+  padding-bottom: 32px;
 
 }
+
+
+
+.header-portfolio-contacts.current {
+  color:#2196f3
+}
+
 
 
 
@@ -370,9 +378,11 @@ padding-bottom: 94px;
 }
 
 .work-text {
-  padding: 27px 0;
-	margin-left: auto;
-	margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	height: 70px;
+  width: 100%;
   font-family: 'Roboto';
 	font-weight: 700;
 	font-size: 14px;
@@ -565,7 +575,11 @@ display: flex;
 }
 
 .footer-adress {
+  margin-bottom: 9px;
+}
 
+
+.foot-ad {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -577,8 +591,11 @@ display: flex;
   letter-spacing: 0.03em;
   color: #FFFFFF;
   text-decoration: none;
+}
 
-  margin-bottom: 9px;
+.foot-ad:hover,
+.foot-ad:focus {
+  color:#2196F3;
 }
 
 
@@ -588,10 +605,15 @@ justify-content: flex-end;
 
 
 .footer-contacts {
+margin-bottom: 9px;
+}
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+.foot-cont {
+transition-property: color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
@@ -600,16 +622,16 @@ line-height: 1.7;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 text-decoration: none;
-margin-bottom: 9px;
 }
+
 
 .footer-contacts:nth-child(3n) {
   margin-bottom: 0;
 }
 
 
-.footer-contacts:hover,
-.footer-contacts:focus {
+.foot-cont:hover,
+.foot-cont:focus {
   color:#2196F3;
 }
 
@@ -714,7 +736,7 @@ justify-content: center;
 
 .button{
 
-transition-property:color, background-color;
+transition-property:color, background-color, box-shadow;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 cursor: pointer;
